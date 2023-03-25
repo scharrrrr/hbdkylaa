@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #24252A;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 70px;
+    background-color: #0f0f13;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem #fa202b;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    padding: 15px;
+    background-color: #0f0f13;
+}
+
+.name-1{
+    color: #edf0f1;
+    font-weight: 700;
+    background-color: #0f0f13;
+    margin-right: 10px;
+}
+
+.name-2{
+    color: #fa202b;
+    padding-left: 0;
+    font-weight: 700;
+    background-color: #0f0f13;
+    margin-left: auto;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f13;
+    cursor: pointer;
+}
+
+.navigation>li{
+    list-style-type: none;
+    padding: 5px;
+    background-color: #0f0f13;
+}
+
+.navigation li a{
+    color: #edf0f1;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #0f0f13;
+    transition: all 0.3s ease 0s;
+}
+
+.navigation li a:hover{
+    color: #fa202b;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.navigation a::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background: #fa202b;
+    bottom: -4px;
+    transition: ease .42s;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #edf0f1;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: -0.1rem -0.1rem 0.3rem rgba(250, 32, 43, 1),
+                0.1rem 0.1rem 1rem rgba(250, 32, 43, 0.8);
+    position: relative;
+}
+
+button:hover {
+    background-color: rgba(250, 32, 43, 0.7);
+    font-weight: bold;
+}
+
+button::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background: #fa202b;
+    bottom: -4px;
+    transition: ease .42s;
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+.discount{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    color: #edf0f1;
+    padding-top: 50px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.text_promo{
+    height: 10rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.wish{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.p1{
+    text-indent: 50px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.p2{
+    text-indent: 50px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.date{
+    margin-top: 30px;
+}
+
+.offer{
+    color: #fa202b;
+}
+
+.lebron_shoes{
+    padding-top: 15px;
+}
+
+.promotion{
+    text-decoration: underline;
+}
+
+.promo_text{
+    padding-top: 10px;
+}
+
+.normal_price{
+    text-decoration: line-through;
+    font-weight: lighter;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.discount_price{
+    font-weight: bolder;
+    color: #fa202b;
+    text-decoration: underline;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+}
+
+.button_cart{
+    padding-top: 25px;
+    padding-left: 60px;
+}
+
+.cart{
+    color: #edf0f1;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fa202b;
+    border-style: none;
+    font-weight: bold;
+    display: inline-flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_text{
+    font-size: 20px;
+    color: #edf0f1;
+    background-color: #fa202b;
+    font-weight: bold;
+}
+
+.thumbnail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.james_shoes{
+    width: 400px;
+    background-color: #24252A;
+    border-radius: 20px;
+}
+
+.design_bot{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.james1{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.james2{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.james3{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.favsong{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.song{
+    justify-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+}
+
+.card {
+    height: 32rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.song-card{
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.song-text{
+    font-weight: bold;
+    font-size: 18px;
+    color: #edf0f1;
+}
+
+.card, .profil-image, .song-card, .photo-card, .text_promo, .wish, .james1, .james2, .james3, .box-card{
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.profil-image {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-1{
+    height: 20rem;
+    width: 14rem;
+    background-image: url(images/song1.jpg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-2{
+    height: 20rem;
+    width: 14rem;
+    background-image: url(images/song2.jpg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-3{
+    height: 20rem;
+    width: 14rem;
+    background-image: url(images/song3.jpg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.title {
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #edf0f1;
+    padding-inline: 25px;
+    margin-bottom: 2px;
+}
+
+.title-2{
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    color: #edf0f1;
+    padding-inline: 25px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+.button-card {
+    border: none;
+    box-shadow: -0.1rem -0.1rem 0.3rem rgba(250, 32, 43, 1),
+                0.1rem 0.1rem 1rem rgba(250, 32, 43, 0.8);
+    margin: 1rem 0;
+}
+
+.player{
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.button-card-text{
+    font-size: 15px;
+    color: #edf0f1;
+    background-color: #fa202b;
+    font-weight: bold;
+    padding-inline: 15px;
+}
+
+.football{
+    margin-left: 30px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-card{
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.photo-text{
+    font-weight: bold;
+    font-size: 18px;
+    color: #edf0f1;
+}
+.football-card{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    gap: 10px;
+}
+
+.card-6{
+    height: 24rem;
+    width: 14rem;
+    background-image: url(images/p1.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 5px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.photo-slide2{
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    gap: 25px;
+}
+
+.card-7{
+    height: 18rem;
+    width: 14rem;
+    background-image: url(images/p2.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-8{
+    height: 18rem;
+    width: 14rem;
+    background-image: url(images/p3.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-9{
+    height: 18rem;
+    width: 14rem;
+    background-image: url(images/p4.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.photo-slide3{
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    gap: 25px;
+}
+
+.card-10{
+    height: 18rem;
+    width: 14rem;
+    background-image: url(images/p5.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-11{
+    height: 18rem;
+    width: 14rem;
+    background-image: url(images/p6.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.photo-slide4{
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    gap: 25px;
+}
+
+.box-card {
+    height: 27rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-12{
+    height: 18rem;
+    width: 22rem;
+    background-image: url(images/p7.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-13{
+    height: 18rem;
+    width: 22rem;
+    background-image: url(images/p8.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+.card-14{
+    height: 18rem;
+    width: 22rem;
+    background-image: url(images/p9.jpeg);
+    background-size: cover;
+    border-radius: 0.8rem;
+    margin-top: 20px;
+    box-shadow: -0.1rem -0.1rem 0.3rem #24252A,
+                0.1rem 0.1rem 1rem black;
+}
+
+button {
+    padding-top: 20px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: rgba(250, 32, 43, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: -0.1rem -0.1rem 0.3rem rgba(250, 32, 43, 1),
+                0.1rem 0.1rem 1rem rgba(250, 32, 43, 0.8);
+    position: relative;
+}
+
+button:hover {
+    background-color: rgba(250, 32, 43, 0.7);
+}
+
+button::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background: #fa202b;
+    bottom: -4px;
+    transition: ease .42s;
+}
+
+button:hover::after {
+    width: 100%;
+}
